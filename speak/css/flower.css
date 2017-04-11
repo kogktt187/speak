@@ -1,0 +1,30 @@
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+
+#main {
+	background-image: url(../img/flower.jpg);
+}
+
+.Str1, .Str2, .Str3, .Str4, .Str5 {
+	float: right; 
+	font-family: 'cwTeXFangSong', serif;
+	color: black;
+	height: 93%;
+	width: auto;
+	text-shadow: rgba(154,154,146,0.6) -15px 20px 6px;
+	-webkit-writing-mode: vertical-rl;
+	margin-top: 7%;
+	font-weight:600;
+	font-size: 600%;
+	margin-right: 6%;
+}		
+
+#S2 {
+	height: 88%;
+	margin-top: 12%;
+	margin-right: 5%;
+}
+
+#shadow1, #shadow2, #shadow3, #shadow4, #shadow5 {
+	display: none;
+}
+	

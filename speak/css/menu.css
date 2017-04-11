@@ -1,0 +1,107 @@
+/* ------ */
+/*  MENU  */
+/* ------ */
+
+
+.slide-menu {
+	font-family: "微軟正黑體";
+	overflow-y: scroll;
+    z-index: 5;
+    position: absolute;
+	top: 0%;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+
+    background: rgb(238,239,239);
+    color: #9F9FA0;
+
+    transition: all 0.5s;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+
+
+#back {
+	position: fixed;
+	overflow: hidden;
+	top: -150px;
+	
+	clip: rect(150px,50px,200px,0);
+	width: auto;
+	height: 400px;
+}
+
+
+#inner {
+	margin-top: 50px;
+}
+
+.header {
+	background: rgba(191,186,186,0.1);
+	padding: 1% 0% 1% 1.5%;
+    font-size: 170%;
+    height: auto;
+}
+
+.lang {
+	height: auto;
+	font-size: 130%;
+	width: 100%;
+}
+
+.lang td {
+	padding: 2% 0% 2% 1.5%;
+	width: 50%;
+}
+
+label:hover{
+	color: rgb(61,61,61);
+}
+
+input[type="radio"]:checked+label {
+	color: rgb(61,61,61);
+}
+
+.lang input {
+	display: none;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 120%;
+}
+
+.menu li {
+    display: block;
+    text-align: center;
+	height: 200%;
+    color: rgb(159,159,160);
+	margin: 1%;
+    text-decoration: none;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.menu input {
+	display: none;
+}
+
+#dropTarget {
+	text-align: left;
+    position: absolute;
+    width: 50%;
+    margin: 2% 0% 10% 2%;
+	background-color: rgba(0,0,0,0)
+	border: 1px solid #B4B5B5;
+	color: #000000;
+	height: auto;
+    font-size: 200%;
+}
+
+

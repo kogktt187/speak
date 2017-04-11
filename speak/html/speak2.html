@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Speak</title>	
+        
+        <!-- Web -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!-- Apple -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="app-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <link class="icon" rel="apple-touch-icon-precomposed" href="../img/telewriteiconfinal.png"  />
+        <link class="icon" rel="shortcut icon" href="../img/telewriteiconfinal.png" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/speak.css">
+        <link rel="stylesheet" type="text/css" href="../css/menu.css">
+        <link rel="stylesheet" type="text/css" href="../css/frame.css">
+
+    </head>
+
+    <body>
+    	<div id="container">
+			<!-- 預覽介面 -->
+			<div id="screen">
+				
+				<div id="picBar">
+
+					<img src="../img/bird.jpg" class="bg" alt="bird"/>
+					<img src="../img/ocean.jpg" class="bg" alt="ocean"/>
+				</div>
+				
+				<div id="cardCheck" class="check">
+					<iframe class="frame" id="cardFrame" src="card.html"></iframe>
+					<p>按這裡轉到youtube</p>
+				</div>
+				
+				
+				<div id="ytCheck" class="check">
+					<iframe class="frame" id="ytFrame" src="https://www.youtube.com/embed/"></iframe>
+				</div>
+			</div>	
+								
+	
+				
+			<!-- 操作介面 -->
+			<div id="main">
+			
+        		<!-- 主要視覺 -->
+        		<div class="mainImage">
+        			<img id="mainImage" src="../img/telewrite_parrot.png" />
+        		</div>
+        		
+        		<!-- 暫時結果 -->   
+        		<div id="resultFrame">
+        			<div class="tempResult">
+        				<input id="tempResult" type="text" style="display: block;" />       			
+        			</div> 		        			
+        		</div>
+
+        		<!-- 送出按鈕 -->     		
+     			<label class="send">
+        			<img id="send" src="../icons/menu-icon-unclick.png" />
+        		</label>		 
+        	</div> 
+        	<img id="setImg" src="../img/(i).png" />   			
+        		
+		</div>
+
+
+		
+
+        <!-- 滑動選單 -->
+        <div id="slide-menu" class="slide-menu">
+        	<img src="../icons/menu-icon-unclick.png" id="back" />
+            <div id="inner">
+	            <div class="header">Language</div>          
+                <table class="lang">
+                	<tr>
+                		<td><input type="radio" id="en" name="lang" value="en-US" /><label for="en">English</label></td>
+                		<td><input type="radio" id="ch" name="lang" value="cmn-Hant-TW" checked /><label for="ch">中文</label></td>
+   		           	</tr>              	           	
+                </table>
+                <!-- 模式 -->
+                <div class="header">Mode</div>
+                <ol class="menu">
+                	<li><input id="card" name="menu" type="radio" value="card" /><label for="card">畫畫卡</label></li>
+                	<li><input id="mouth" name="menu" type="radio" value="mouth" /><label for="mouth">動動口</label></li>
+                	<li><input id="sing" name="menu" type="radio" value="sing" checked/><label for="sing">唱唱歌</label></li>
+                	<li><input id="mail" name="menu" type="radio" value="mail" /><label for="mail">寄寄信</label></li>
+               	 	<li><input id="memo" name="menu" type="radio" value="memo" /><label for="memo">MEMO</label></li>
+                </ol>
+                
+                <div class="header">Target</div>
+                	<input id="dropTarget" type="text" />               	
+            </div>
+
+        </div>
+
+        <input type="text" style="display: none" id="menu" />
+    </body>
+</html>
+
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+<!-- JavaScript -->
+<script src="../js/app2.js"></script>  <!--放變數的-->
+<script src="../js/speak.js"></script>
+<script src="../js/recognition.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/memo.js"></script>
+<script src="../js/youtube.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=init"></script>
+
+
+

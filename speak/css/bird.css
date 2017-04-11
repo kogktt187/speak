@@ -1,0 +1,50 @@
+
+
+#main {
+	background-image: url(../img/bird.jpg);
+}
+
+
+
+/*為了做互動所以分開Str*/
+.Str1 {
+	font-family: 'bigfont';
+	font-size:119px;
+	width: 80%;
+	margin-top:23.5%;
+	margin-left:16%;
+    position:absolute;
+}	
+
+
+
+.Str2 {
+	font-family: 'smallfont';
+	font-size:90px;
+	width: 70%;
+	margin-top:34%;
+	margin-left:11%;
+    padding-left: 15%;
+	position:absolute;
+}	
+
+#S1{
+	background:-webkit-linear-gradient(bottom,#FF0000,#ffff00);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke:2px #FFFFFF;
+}
+
+#shadow1 {
+	color: transparent;
+	text-shadow: #000066 0px 4px, #000066 4px 0px, #000066 -4px 0px, 
+    #000066 0px -4px;
+}
+
+#shadow2, #shadow3, #shadow4, #shadow5 {
+	display: none;
+}
+
+
+
+
